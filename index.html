@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anusha portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo">Anusha</h1>
+            <!-- <img src="images/logo.png" class="logo"> -->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#internship">Internships</a></li>
+                <li><a href="#project">projects</a></li>
+                <li><a href="#contact">contact me</a></li>
+                <i class='bx bx-x' onclick="closemenu()"></i>
+            </ul>
+            
+            <i class='bx bx-menu' onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Engineer</p>
+            <h1>Hi, I'm<span> Anusha</span><br>  From Lingasur</h1>
+        </div>
+    </div>
+</div>
+
+<!-- --------------about------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/image1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1><br>
+                <p>Currently persuing computer science and engineering in A G M Rural engineering college and technology ,Eager to leverage my academic projects and practical experiences to contribute effectively to software development teams.
+                    To seek a dynamic and challenging career in an organization that strives for excellence with my knowledge and team effort while making positive contributions to promoting individual opportunities and professional growth.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                    <p class="tab-links"onclick="opentab('languages')" >languages</p>
+                    <p class="tab-links"onclick="opentab('education')" >Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming & scripting language </span><br>Python , Java , C++ , C </li>
+                        <li><span>Databases/Servers</span><br> MySQL , PHPmyAdmin </li>
+                        <li><span>tools</span><br> VS Code , anaconda </li>
+                        <li><span>Front-end developer</span><br>web applications</li>
+                        <li><span>data Analyst</span><br>data analysis</li>
+                        <li><span>personal skills</span><br>Adaptibilty , Leadership , Team work , time management , Problem solving</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="languages">
+                    <ul>
+                        <li><span>English</span><br> </li>
+                        <li><span>Kannada</span><br></li>
+                        <li><span>Telugu</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span> B.E (2021-2025)</span><br>A.G.M Rural college of Engineering and Technology<BR>varur, Hubli</li>
+                        <li><span>II PU(2019-2021)</span><br>Bellary Indp PU College<br>Hospete Road Allipura,Ballery</li>
+                        <li><span>SSLC (2019)</span><br>Vivweswaraiah English Madium High School<br>Allipura, ballari</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="images/ANU.CV.pdf" download class="btn btn3"> Download CV</a>
+</div>
+<br>
+
+<!-- --------------internship------------ -->
+<div id="internship">
+    <div class="container">
+        <h1 class="sub-title">My Internships</h1>
+        <div class="internship-list">
+            <div>
+                <i class='bx bxs-objects-vertical-bottom' ></i>
+                <h2>data science</h2>
+                <p>Successfully trained to understand Data science , with the tools anaconda. 
+                    Actively engaged in continuous learning and self-development to stay up-to-date with the latest advancements in Machine learning and data science </p>
+                <a href="" >learn more</a>
+            </div>
+           
+            
+        </div>
+    </div>
+    <a href="images/Anu_resume.pdf" download class="btn btn3"> Download Resume</a>
+</div>
+<br>
+
+<!-- ==============projects============== -->
+<div id="project">
+    <div class="container1">
+        <h1 class="sub-title">My  Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/img2.png">
+                <div class="layer">
+                    <h3>Face Recognition for attendence</h3>
+                    <br>
+                    <p>Project Type        : Face Recognition for attendence<br>
+                       Project Technologies: Python (pyttsx3, SpeechRecognition, requests)
+                       <br>
+                       Role                : Software Developer</p>
+                        
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/image4.jpg">
+                <div class="layer">
+                    <h3>Moving Ball my missing bricks</h3>
+                    <br>
+                    <p>Project Type        : Moving Ball my missing bricks<<br>
+                       Project Technologies: Python, pygame
+                       <br>
+                       Role                : Software Developer</p>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!-- =============contact============= -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            
+            <div class="contact-left">
+                <h1 class="sub-title"> contact me</h1>
+                <p><i class='bx bx-mail-send' ></i> contact@ anushareddyk93@gmail.com </p>
+                <p><i class='bx bx-phone' ></i>   91+ 6300286801</p>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" >
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit"  class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="social-icons">
+            <p> Copyright@Anusha,All Right reserved</p>
+            <P>contact me @</P>
+            <BR>
+            <a href="https://www.linkedin.com/in/anusha-k-25196632b/"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+        
+        
+    </div>
+ </div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+        for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    } 
+
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzFy3O6ze59uXh1XY2Bh8JOIFii1eTi39H193d0um1o5TtBkuEeMJQWxWiElPpUYpaFlw/exec'
+    const form = document.forms['submit-to-google-sheet']
+  constmsg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
